@@ -10,6 +10,7 @@ Data acquisition was performed using web scraping techniques with the google-pla
 *   **Total Rows:** 513,394 reviews (excluding header).
 *   **Data Source:** This dataset contains user review data for the Gojek application scraped from the Google Play Store.
 *   **Main Purpose:** Commonly used for sentiment analysis, customer satisfaction analysis, or text classification.
+*   [**Link Dataset**](https://www.kaggle.com/datasets/hendrimardani/gojek-sentiment-analysis-text)
 
 ## Column Explanations and Data Types
 | Column Name | Data Type | Description |
