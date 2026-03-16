@@ -2841,15 +2841,6 @@ features_df = pd.DataFrame(X_tfidf_xgb.toarray(), columns=tfidf.get_feature_name
 features_df
 
 
-# In[42]:
-
-
-tfidf = TfidfVectorizer(ngram_range=(1,2), max_features=600, min_df=20, max_df=0.9)
-X_tfidf_ = tfidf.fit_transform(X)
-features_df = pd.DataFrame(X_tfidf_xgb.toarray(), columns=tfidf.get_feature_names_out())
-features_df
-
-
 # # Data Splitter
 
 # In[48]:
