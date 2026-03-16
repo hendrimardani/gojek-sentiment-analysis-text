@@ -2,6 +2,36 @@
 
 This project aims to perform sentiment analysis on user reviews of the **Gojek** application scraped directly from the Google Play Store. The project pipeline includes data collection (web scraping), text preprocessing (NLP), Exploratory Data Analysis (EDA), feature extraction, and Machine Learning modeling to predict and classify user sentiment (Positive, Neutral, or Negative).
 
+## Dataset Description
+
+Data acquisition was performed using web scraping techniques with the google-play-scraper library. Data collection focused on the com.gojek.app application, with language and country localization set to Indonesia. The collected data is dynamic, sorted by “newest” with a total of 500,000 review entries to ensure the sentiment is relevant to the current version of the app.
+## Dataset Summary
+*   **File Name:** gojek_sentiment_analysis.csv
+*   **Total Rows:** 513,394 reviews (excluding header).
+*   **Data Source:** This dataset contains user review data for the Gojek application scraped from the Google Play Store.
+*   **Main Purpose:** Commonly used for sentiment analysis, customer satisfaction analysis, or text classification.
+
+## Column Explanations and Data Types
+| Column Name | Data Type | Description |
+| :--- | :--- | :--- |
+| reviewId | String (Object) | Unique ID for each review (UUID). |
+| userName | String (Object) | The name of the user account that provided the review. |
+| userImage | String (Object) | URL to the user's profile picture. |
+| content | String (Object) | The main review text written by the user (Indonesian). |
+| score | Integer (int64) | Star rating given (scale 1 to 5). |
+| thumbsUpCount| Integer (int64) | Number of other users who marked this review as "Helpful". |
+| reviewCreatedVersion | String (Object) | The version of the Gojek app used when the review was created. |
+| at | Datetime (Object)| Date and time the review was submitted by the user. |
+| replyContent | String (Object) | Official reply text from the Gojek CS team (if any). |
+| repliedAt | Datetime (Object)| Date and time when the Gojek team provided a reply. |
+| appVersion | String (Object) | Current application version (often the same as reviewCreatedVersion). |
+
+## Additional Information
+*   **Missing Values:** The `replyContent` and `repliedAt` columns have many missing values because not all reviews are replied to by the Gojek team. The `reviewCreatedVersion` and `appVersion` columns also have some missing values.
+*   **Language:** Most reviews are written in Indonesian with various language styles (formal, polite, or slang/informal).
+*   **Rating Scale:** The `score` column is the primary indicator of sentiment (1-2 is usually negative, 3 is neutral, 4-5 is positive).
+
+
 ## 📂 Directory Structure
 
 Here is an explanation of the main files in this project:
