@@ -1,6 +1,6 @@
 # Gojek App Review Sentiment Analysis
 
-This project aims to perform sentiment analysis on user reviews of the **Gojek** application scraped directly from the Google Play Store. The project pipeline includes data collection (web scraping), text preprocessing (NLP), Exploratory Data Analysis (EDA), feature extraction, and Machine Learning modeling to predict and classify user sentiment (Positive, Neutral, or Negative).
+This project aims to conduct sentiment analysis on user reviews of the Gojek app collected directly from the Google Play Store. The project workflow includes data collection (web scraping), text preprocessing (NLP), Exploratory Data Analysis (EDA), feature extraction, and Machine Learning modeling to predict and classify user sentiment (Positive, Neutral, or Negative). The final results were obtained using model fine-tuning techniques, with a validation accuracy over 92%.
 
 ## Dataset Description
 
